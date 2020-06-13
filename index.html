@@ -6,7 +6,661 @@
 
 <body>
 	<form name="formulaire" id="mon_form" netlify netlify-honeypot="bot-field">
-		<input type="text" name="nom">
+		<label>Nom : </label>
+		<input type="text" name="nom"><br>
+		<label>Prénom : </label>
+		<input type="text" name="prenom"><br>
+		<label>Pseudo : </label>
+		<input type="text" name="pseudo"><br>
+		<label>Adresse : </label>
+		<input type="text" name="adresse"><br>
+		<label>Code postal : </label>
+		<input type="number" name="cp"><br>
+		<label>Ville : </label>
+		<input type="text" name="ville"><br>
+		<label>Pays : </label>
+		<input type="text" name="pays"><br>
+		<label>Email : </label>
+		<input type="mail" name="email"><br>
+		<label>Téléphone : </label>
+		<input type="tel" name="tel"><br>
+		<label>Site web : </label>
+		<input type="url" name="siteweb"><br>
+		<label>Votre logo : </label>
+		<input type="file" name="logo"><br>
+
+		<span id="actu">
+			<span>
+				<input type="radio" name="actu" value="Intéressé" checked="checked">
+				<span>Intéressé</span>
+			</span>
+			<span>
+				<input type="radio" name="actu" value="Pas intéressé">
+				<span>Pas intéressé</span>
+			</span>
+		</span><br>
+
+
+		<span id="offre">
+			<input type="checkbox" name="offre[]" value="Promotions">
+			<span>Promotions</span>
+		</span>
+		<span>
+			<input type="checkbox" name="offre[]" value="Informations">
+			<span>Informations</span>
+		</span>
+		<span>
+			<input type="checkbox" name="offre[]" value="Emplois">
+			<span>Emplois</span>
+		</span>
+		<span>
+			<input type="checkbox" name="offre[]" value="Offres">
+			<span>Offres</span>
+		</span>
+		<span>
+			<input type="checkbox" name="offre[]" value="CV">
+			<span>CV</span>
+		</span><br>
+
+		<span id="aide">
+			<span>
+				<input type="radio" name="aide" value="Demander une assistance" checked="checked">
+				<span>Demander une assistance</span>
+			</span>
+			<span>
+				<input type="radio" name="aide" value="Pas d'assistance">
+				<span>Pas d'assistance</span>
+			</span>
+		</span><br>
+
+
+
+		<!-- CLIENTS -->
+
+		<label>Type de structure : </label>
+		<select name="typeStructure" id="typeStructure">
+			<option value="Association">Association</option>
+			<option value="Collectivité">Collectivité</option>
+			<option value="Marque">Marque</option>
+			<option value="Corporation">Corporation</option>
+			<option value="Commerçant">Commerçant</option>
+			<option value="Artisan">Artisan</option>
+			<option value="Institution">Institution</option>
+			<option value="Comité d'entreprise">Comité d'entreprise</option>
+			<option value="Bureau étudiant">Bureau étudiant</option>
+			<option value="Autre">Autre</option>
+		</select>
+
+		<span id="autre_structure">
+			<label>Autre structure : </label>
+			<input type="text" name="autre_structure"><br>
+		</span>
+
+		<span id="nom_structure">
+			<label>Nom de la structure : </label>
+			<input type="text" name="nom_structure"><br>
+		</span>
+
+		<span>
+			<label>Produits concernés : </label><br>
+			<span>
+				<span id="listeProduits">
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="t-shirt">
+						<span>t-shirt</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="casquette">
+						<span>casquette</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="sweat">
+						<span>sweat</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="pantalon">
+						<span>pantalon</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="jeans">
+						<span>jeans</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="top">
+						<span>top</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="maroquinerie">
+						<span>maroquinerie</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="accessoire">
+						<span>accessoire</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="veste">
+						<span>veste</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="manteau">
+						<span>manteau</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="pull">
+						<span>pull</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="gilet">
+						<span>gilet</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="chaussures">
+						<span>chaussures</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="techniques">
+						<span>techniques</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="robe">
+						<span>robe</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="jupe">
+						<span>jupe</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="costumes">
+						<span>costumes</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="tailleur">
+						<span>tailleur</span>
+					</span><span>
+						<input type="checkbox" name="listeProduits[]" value="sous vêtement">
+						<span>sous vêtement</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="sac">
+						<span>sac</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="bonnet">
+						<span>bonnet</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="ceinture">
+						<span>ceinture</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="chaussettes">
+						<span>chaussettes</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="leggins">
+						<span>leggins</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="short">
+						<span>short</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="lunettes">
+						<span>lunettes</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="maillot de bain">
+						<span>maillot de bain</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="polo">
+						<span>polo</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="survêtement">
+						<span>survêtement</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="débardeur">
+						<span>débardeur</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="salopette">
+						<span>salopette</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="chemise">
+						<span>chemise</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="short">
+						<span>short</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="pantoufles">
+						<span>pantoufles</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="totebag">
+						<span>totebag</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="pyjama">
+						<span>pyjama</span>
+					</span>
+					<span>
+						<input type="checkbox" name="listeProduits[]" value="éponge">
+						<span>éponge</span>
+					</span>
+					<span class="wpcf7-list-item last">
+						<input type="checkbox" name="listeProduits[]" value="autre">
+						<span>autre</span>
+					</span>
+				</span>
+			</span>
+		</span>
+
+		<span>
+			<label>Vous recherchez : </label><br>
+			<span id="besoins">
+				<span>
+					<input type="checkbox" name="besoins[]" value="Usine">
+					<span>Usine</span>
+				</span>
+				<span>
+					<input type="checkbox" name="besoins[]" value="Atelier">
+					<span>Atelier</span>
+				</span>
+				<span>
+					<input type="checkbox" name="besoins[]" value="Couturière">
+					<span>Couturière</span>
+				</span>
+				<span>
+					<input type="checkbox" name="besoins[]" value="Broderie">
+					<span>Broderie</span>
+				</span>
+				<span>
+					<input type="checkbox" name="besoins[]" value="Print">
+					<span>Print</span>
+				</span>
+				<span>
+					<input type="checkbox" name="besoins[]" value="échantillon">
+					<span>échantillon</span>
+				</span>
+				<span>
+					<input type="checkbox" name="besoins[]" value="collection">
+					<span>collection</span>
+				</span>
+				<span class="wpcf7-list-item last">
+					<input type="checkbox" name="besoins[]" value="production">
+					<span>production</span>
+				</span>
+			</span>
+		</span>
+
+
+		<span id="besoinsSpe">
+			<label>Vous avez besoin : </label><br>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="photographe">
+				<span>photographe</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="illustrateur">
+				<span>illustrateur</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="styliste">
+				<span>styliste</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="graphiste">
+				<span>graphiste</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="développeur">
+				<span>développeur</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="commercial">
+				<span>commercial</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="distributeur">
+				<span>distributeur</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="modéliste">
+				<span>modéliste</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="chef de projet">
+				<span>chef de projet</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="assistant de direction">
+				<span>assistant de direction</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="mannequin">
+				<span>mannequin</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="RP">
+				<span>RP</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="community manager">
+				<span>community manager</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="marketing">
+				<span>marketing</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="intégrateur">
+				<span>intégrateur</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="webmaster">
+				<span>webmaster</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="CTO">
+				<span>CTO</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="influencer">
+				<span>influencer</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="responsable de production">
+				<span>responsable de production</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="conseil">
+				<span>conseil</span>
+				</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="agent">
+				<span>agent</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="commercial">
+				<span>commercial</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="journaliste">
+				<span>journaliste</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="agence de communication">
+				<span>agence de communication</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="productrice">
+				<span>productrice</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="investisseur">
+				<span>investisseur</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="assurance">
+				<span>assurance</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="comptable">
+				<span>comptable</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="responsable éditoriale">
+				<span>responsable éditoriale</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="assistant de production">
+				<span>assistant de production</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="business developper">
+				<span>business developper</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="artiste">
+				<span>artiste</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="stagiaire">
+				<span>stagiaire</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="coordinateur logistique">
+				<span>coordinateur logistique</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="coordinateur qualité">
+				<span>coordinateur qualité</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="ingénieur textile">
+				<span>ingénieur textile</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="consultant">
+				<span>consultant</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="créateur de mode">
+				<span>créateur de mode</span>
+			</span>
+			<span>
+				<input type="checkbox" name="besoinsSpe[]" value="responsable qualité">
+				<span>responsable qualité</span>
+			</span>
+			<span class="wpcf7-list-item last">
+				<input type="checkbox" name="besoinsSpe[]" value="Autre">
+				<span>Autre</span>
+			</span>
+		</span>
+
+
+		<!-- USINES -->
+
+		<span>
+			<label>Les plus : </label><br>
+			<span>
+				<input type="checkbox" name="checkbox-838[]" value="Made in France">
+				<span>Made in France</span>
+			</span>
+			<span>
+				<input type="checkbox" name="checkbox-838[]" value="Made in UE">
+				<span>Made in UE</span>
+			</span>
+			<span>
+				<input type="checkbox" name="checkbox-838[]" value="Local">
+				<span>Local</span>
+			</span>
+			<span>
+				<input type="checkbox" name="checkbox-838[]" value="Pas cher">
+				<span>Pas cher</span>
+			</span>
+			<span>
+				<input type="checkbox" name="checkbox-838[]" value="Qualité">
+				<span>Qualité</span>
+			</span>
+			<span>
+				<input type="checkbox" name="checkbox-838[]" value="Rapidité">
+				<span>Rapidité</span>
+			</span>
+			<span>
+				<input type="checkbox" name="checkbox-838[]" value="éco-responsable">
+				<span>éco-responsable</span>
+			</span>
+			<span>
+				<input type="checkbox" name="checkbox-838[]" value="Turquie">
+				<span>Turquie</span>
+			</span>
+			<span>
+				<input type="checkbox" name="checkbox-838[]" value="chine">
+				<span>chine</span>
+			</span>
+			<span>
+				<input type="checkbox" name="checkbox-838[]" value="local">
+				<span>local</span>
+			</span>
+			<span>
+				<input type="checkbox" name="checkbox-838[]" value="connu">
+				<span>connu</span>
+			</span>
+			<span>
+				<input type="checkbox" name="checkbox-838[]" value="échantillon">
+				<span>échantillon</span>
+			</span>
+			<span class="wpcf7-list-item last">
+				<input type="checkbox" name="checkbox-838[]" value="collection">
+				<span>collection</span>
+			</span>
+		</span>
+
+		<!-- 
+		<span id="volume">
+			<label>Quel volume : </label><br>
+			<span>
+				<input type="radio" name="volume" value="Petit volume" checked="checked">
+				<span>Petit volume</span>
+			</span>
+			<span>
+				<input type="radio" name="volume" value="Volume Moyen">
+				<span>Volume Moyen</span>
+			</span>
+			<span class="wpcf7-list-item last">
+				<input type="radio" name="volume" value="Gros volume">
+				<span>Gros volume</span>
+			</span>
+		</span>
+		-->
+
+		<span>
+			<label>Quel volume : </label><br>
+			<select name="volumeProduction" id="volumeProduction">
+				<option value="Petit volume">Petit volume</option>
+				<option value="Volume Moyen">Volume Moyen</option>
+				<option value="Gros volume">Gros volume</option>
+			</select>
+		</span>
+
+		<!-- <span id="gamme">
+			<span>
+				<input type="radio" name="gamme" value="Haut de gamme" checked="checked">
+				<span>Haut de gamme</span>
+			</span>
+			<span>
+				<input type="radio" name="gamme" value="Milieu de gamme">
+				<span>Milieu de gamme</span>
+			</span>
+			<span class="wpcf7-list-item last">
+				<input type="radio" name="gamme" value="Bas de gamme">
+				<span>Bas de gamme</span>
+			</span>
+		</span>
+		-->
+		<span>
+			<label>Quel gamme : </label><br>
+			<select name="gammeProduction" id="gammeProduction">
+				<option value="Haut de gamme">Haut de gamme</option>
+				<option value="Milieu de gamme">Milieu de gamme</option>
+				<option value="Bas de gamme">Bas de gamme</option>
+			</select>
+		</span>
+
+		<span>
+			<label>Lieu de fabrication : </label><br>
+			<span>
+				<input type="checkbox" name="lieuFabrication[]" value="France">
+				<span>France</span>
+			</span>
+			<span>
+				<input type="checkbox" name="lieuFabrication[]" value="Portugal">
+				<span>Portugal</span>
+			</span>
+			<span>
+				<input type="checkbox" name="lieuFabrication[]" value="Espagne">
+				<span>Espagne</span>
+			</span>
+			<span>
+				<input type="checkbox" name="lieuFabrication[]" value="UE">
+				<span>UE</span>
+			</span>
+			<span>
+				<input type="checkbox" name="lieuFabrication[]" value="Turquie">
+				<span>Turquie</span>
+			</span>
+			<span>
+				<input type="checkbox" name="lieuFabrication[]" value="Chine">
+				<span>Chine</span>
+			</span>
+			<span class="wpcf7-list-item last">
+				<input type="checkbox" name="lieuFabrication[]" value="Monde">
+				<span>Monde</span>
+			</span>
+		</span>
+
+		<span>
+			<label>Quel devis : </label><br>
+			<select name="devise" id="devise">
+				<option value="EUR">EUR</option>
+				<option value="USD">USD</option>
+				<option value="GBP">GBP</option>
+				<option value="CHF">CHF</option>
+				<option value="CNH">CNH</option>
+				<option value="JPY">JPY</option>
+			</select>
+		</span>
+		
+
+		<span id="publicitaire">
+			<span>
+				<input type="radio" name="statutIndependant" value="Publicitaire" checked="checked">
+				<span>Publicitaire</span>
+			</span>
+			<span>
+				<input type="radio" name="statutIndependant" value="SurMesure">
+				<span>Sur-mesure</span>
+			</span>
+		</span>
+
+
+		<!-- INTERVENANT -->
+
+		<span>
+			<span>
+				<label>Nom de l'entreprise : </label>
+				<input type="text" name="entreprise_intervenant"><br>
+			</span>
+			<span>
+				<label>Numéro SIRET : </label>
+				<input type="text" name="siret_intervenant"><br>
+			</span>
+		</span>
+
+		<span id="statutIndependant">
+			<span>
+				<input type="radio" name="statutIndependant" value="Agence" checked="checked">
+				<span>Agence</span>
+			</span>
+			<span>
+				<input type="radio" name="statutIndependant" value="Indépendant">
+				<span>Indépendant</span>
+			</span>
+			<span class="wpcf7-list-item last">
+				<input type="radio" name="statutIndependant" value="Entreprise">
+				<span>Entreprise</span>
+			</span>
+		</span>
+
+
+
+		<input type="hidden" name="particuliers">
 		<button type="submit" name="submit">Envoyer</button>
 	</form>
 </body>
